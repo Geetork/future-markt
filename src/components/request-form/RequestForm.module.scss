@@ -1,0 +1,44 @@
+@import "../../index.scss";
+
+.button__container {
+    height: 70px;
+    width: 100%;
+}
+
+.form {
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    padding-right: 30px;
+    padding-top: 40px;
+    @include column(60px);
+    justify-content: flex-start;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    @include row;
+}
+
+@media (max-width: 1025px) and (max-height: 799px) {
+    .form {
+        gap: 30px;
+    }
+    
+    .button__container {
+        height: 50px;
+    }
+}
+
+@media (max-width: 599px) and (max-height: 1023px) {
+    .form {
+        gap: 30px;
+    }
+    
+    .button__container {
+        height: 50px;
+    }
+}

@@ -1,0 +1,11 @@
+@import "../../index.scss";
+
+.row {
+    @include row(15px);
+}
+
+@media (max-width: 1023px) {
+    .hidden {
+      display: none;
+    }
+}

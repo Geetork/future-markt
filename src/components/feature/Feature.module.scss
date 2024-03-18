@@ -1,0 +1,20 @@
+@import "../../index.scss";
+
+.container {
+    margin: 0;
+    position: relative;
+    @include column(30px);
+    max-height: 137px;
+    padding-left: 24px;
+}
+
+.text {
+    max-width: 200px;
+    opacity: 0.5;
+}
+
+@media (max-width: 767px) or (max-height: 599px) {
+    .container {
+        gap: 0;
+    }
+}

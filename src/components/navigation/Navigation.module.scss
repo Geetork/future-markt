@@ -1,0 +1,20 @@
+@import "../../index.scss";
+
+.container {
+    width: fit-content;
+    @include row(30px);
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width: 899px) {
+    .hidden {
+      display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+}

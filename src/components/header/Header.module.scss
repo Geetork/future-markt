@@ -1,0 +1,28 @@
+@import "../../index.scss";
+
+.container {
+    @include row(0px);
+    margin-top: 40px;
+    align-items: center;
+    max-width: 1320px;
+    width: 100%;
+}
+
+@media (max-width: 899px) {
+    .hidden {
+      display: none;
+    }
+
+    .container {
+        display: flex;
+        @include row(10px);
+        margin-top: 20px;
+        justify-content: flex-end;
+    }
+
+    .logo {
+        margin-right: auto;
+        width: fit-content;
+        height: 20px;
+    }
+}
